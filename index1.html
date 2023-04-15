@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Online tool to summarize transcript of an eligible YouTube video. The video should have well formatted closed-captions to perform summarization by various techniques.">
+  <meta name="robots" content="index,follow" />
+  <meta property='og:title' content="YouTube Transcript Summarizer | Web Summarizer" />
+  <meta property='og:image' content='y1.png' />
+  <title>YouTube Transcript Summarizer | Web Summarizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/web.css">
+  <link src="y1.png" rel="icon">
+</head>
+
+<body>
+  
+  <!-- Main content -->
+  <main>
+    <!-- Header section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="y1.png" height="64" width="64" alt="YouTube Icon">
+          <h1>YouTube Transcript Summarizer</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <h2>Summarize YouTube Transcripts Quickly and Easily</h2>
+        <form method="POST" action="/">
+          <label for="vid_id">Enter the YouTube video ID:</label>
+          <input type="text" name="vid_id" placeholder="e.g. JwYX52BP2Sk">
+          <button type="submit">Get Transcript</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- How it works section -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2>How it Works</h2>
+        <div class="steps">
+          <div class="step">
+            <img src="/static/step-1.png" alt="Step 1">
+            <h3>Enter YouTube Video ID</h3>
+            <p>Copy the video ID from the YouTube URL and enter it in the input field above.</p>
+          </div>
+          <div class="step">
+            <img src="/static/step-2.png" alt="Step 2">
+            <h3>Get Transcript</h3>
+            <p>Click the "Get Transcript" button to retrieve the transcript from YouTube.</p>
+          </div>
+          <div class="step">
+            <img src="/static/step-3.png" alt="Step 3">
+            <h3>Summarize Transcript</h3>
+            <p>Once the transcript is loaded, click the "Summarize Transcript" button to generate a summary.</p>
+          </div>
+        </div>
+      </div>

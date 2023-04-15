@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transcript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/transcript.css"">
+</head>
+<body>
+    <!-- Main content -->
+    <main>
+      <!-- Header section -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img src="y1.png" height="64" width="64" alt="YouTube Icon">
+            <h1>YouTube Transcript Summarizer</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="container-fluid">
+        <h1 class="header">Transcript</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="title">{{ title }}</h2>
+                <img src="{{ thumbnail_url }}" alt="Thumbnail for {{ title }}" class="thumbnail">
+            </div>
+            <div class="col-md-6">
+                {% if result %}
+                <div class="transcript">
+                    <h2 class="subtitle">Transcript:</h2>
+                    <p class="text">{{ result }}</p>
+                    <a href="{{ url_for('download_transcript') }}" class="btn download-btn">Download Transcript</a>
+                </div>
+                
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

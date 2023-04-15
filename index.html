@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <form action="/" method="post">
+            <input type="text" name="input_data">
+            <button type="submit">Submit</button>
+        </form>
+        {% if result %}
+            <p>{{ result }}</p>
+        {% endif %}
+        {% if result %}
+        <h2>Transcript:</h2>
+        <p>{{ result }}</p>
+        <a href="{{ url_for('download') }}">Download Transcript</a>
+    {% endif %}
+    </body>
+</html>
